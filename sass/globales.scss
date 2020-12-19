@@ -1,0 +1,73 @@
+$color-primario:#2bb9cd;
+$color-secundario:hsl(137, 59%, 52%);
+$gris-primario:#fafafa;
+$color-claro:#ffff;
+$fuente:'Public Sans', sans-serif;
+$color-variacion:#a5a4aa;
+
+@mixin boton {
+	width: 156px;
+	height: 42px;
+	border-radius: 21px;
+	border: none;
+	font-family: $fuente;
+	font-weight: 700;
+	color: $color-claro;
+	cursor: pointer;
+	background-image: linear-gradient(90deg, $color-primario,$color-secundario);
+}
+@mixin titulos {
+	font-weight: lighter;
+	font-family: $fuente;
+	margin-bottom: 28px;
+	color: black;
+	
+}
+@mixin articulos{
+	height: 228px;
+	width: 245px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 27px;
+	margin-top: 72px;
+	text-align: left;
+	img{
+		margin-bottom: 41px;
+	}
+
+}
+
+@each $header, $size in (h1: 60px, h2: 50px, h3: 25px, h4:18px){
+	#{$header}{
+		font-size: $size;
+		margin: 0;
+	}
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+h1{
+	@include titulos();
+}
+h2{
+	@include titulos();
+}
+h3{
+	@include titulos();
+}
+h4{
+	@include titulos();
+	margin-bottom: 10px;
+}
+p{
+	font-size: 18px;
+	color: $color-variacion;
+	font-family: $fuente;
+}
+
+body{
+	position: relative;
+}

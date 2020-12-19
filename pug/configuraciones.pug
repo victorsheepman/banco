@@ -1,0 +1,15 @@
+
+-var enlaces=['Home', 'About', 'Contact', 'Blog', 'Careers']
+mixin articulo(imagen,titulo,parrafo)
+    .articulo
+        .articulo__imagen: img(src=imagen)
+        h3=titulo
+        p=parrafo
+        
+mixin articulos(imagen,autor,titulo,parrafo)
+    .opciones
+        .opciones__imagen: img(src=imagen)
+        .opciones__cuerpo
+            span=autor
+            h4=titulo
+            p=parrafo

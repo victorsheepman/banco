@@ -1,0 +1,17 @@
+.about{
+    background-color: #f4f5f7;
+    height: 642px;
+    width: 100%;
+    padding-top: 105px;
+    padding-left: 155px;
+    padding-right: 155px;
+    
+    &__cajas{
+        display: flex;     
+    }    
+}
+
+.articulo{
+    @include articulos;
+}
+

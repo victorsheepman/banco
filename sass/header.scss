@@ -1,0 +1,29 @@
+.cabecera{
+    width: 100%;
+    height: 76px;
+    display: flex;
+    padding-left: 157px;
+    padding-top: 17px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 157px;
+    background-color: white;
+    position: sticky;
+    z-index: 2;
+    &__menu{
+        width: 312px;
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            font-size: 14px;
+            font-family: $fuente;
+            color: $color-variacion;
+            cursor: pointer;
+        }
+        
+    }
+    &__boton{
+        @include boton;
+    }
+}
