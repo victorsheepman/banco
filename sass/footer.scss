@@ -39,7 +39,9 @@ footer{
         flex-direction: column;
     }
 }
-
+ a:hover{
+     color: $color-secundario;
+ }
 .parte3{
     width: 33.33%;
     height: 100%;

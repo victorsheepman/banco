@@ -260,6 +260,10 @@ footer {
   flex-direction: column;
 }
 
+a:hover {
+  color: #3ccd65;
+}
+
 .parte3 {
   width: 33.33%;
   height: 100%;
